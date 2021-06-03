@@ -10,6 +10,7 @@ import {
 } from 'react-native';
 import Cart from './components/Cart/Cart';
 import Login from './components/Login/Login';
+import OnBoardScreen from './components/OnBoardScreen/OnBoardScreen';
 
 export const stateContext = createContext();
 
@@ -19,6 +20,7 @@ const App = () => {
       <stateContext.Provider value={[cart, setCart, userInfo, setuserInfo]}>
         <Cart></Cart>
         <Login></Login>
+        <OnBoardScreen></OnBoardScreen>
       </stateContext.Provider>
   );
 };
