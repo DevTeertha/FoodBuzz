@@ -3,6 +3,7 @@ import { SafeAreaView, View, Text, StyleSheet, Image, Pressable } from 'react-na
 
 const CartListCard = ({ cart, quantityDecrease, quantityIncrease }) => {
     const { name, price, img, quantity, id } = cart;
+
     return (
         <SafeAreaView style={style.cardContainer}>
             <View style={{ flexDirection: 'row' }}>

@@ -9,14 +9,16 @@ import {
   View
 } from 'react-native';
 import Cart from './components/Cart/Cart';
+import Login from './components/Login/Login';
 
 export const stateContext = createContext();
 
 const App = () => {
-  const [cart, setCart] = useState([]);
+  const [cart, setCart,userInfo, setuserInfo] = useState([]);
   return (
-      <stateContext.Provider value={[cart, setCart]}>
+      <stateContext.Provider value={[cart, setCart, userInfo, setuserInfo]}>
         <Cart></Cart>
+        <Login></Login>
       </stateContext.Provider>
   );
 };
